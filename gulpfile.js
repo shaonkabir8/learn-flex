@@ -7,7 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // gulp task for geneating autoprefix on css
 gulp.task('styles', function() {
     
-    return gulp.src('flexnav/flexnav.css')
+    return gulp.src('nesting_flexbox/nesting_flexbox.css')
         .pipe(autoprefixer())
         .pipe(gulp.dest('build'))
 
@@ -16,7 +16,7 @@ gulp.task('styles', function() {
 
 // gulp task for watching on everytime css changed!!
 gulp.task('watch', function() {
-    gulp.watch('flexnav/flexnav.css', gulp.series('styles'));
+    gulp.watch('nesting_flexbox/nesting_flexbox.css', gulp.series('styles'));
 });
 
 // I just have to waste a lot of times to making this `watch` task completely successfull.
