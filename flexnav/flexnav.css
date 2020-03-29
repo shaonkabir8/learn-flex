@@ -60,6 +60,7 @@ footer {
     color: white;
     font-weight: 100;
 }
+
 /* Flex Container */
 .flex-nav ul {
     border: 1px solid black;
@@ -69,7 +70,7 @@ footer {
     display: flex;
 }
 
-.flex-nav  li {
+.flex-nav li {
     flex: 3;
 }
 
@@ -87,7 +88,7 @@ footer {
     .flex-nav ul li {
         flex: 1 1 50%;
     }
-    
+
     .flex-nav .social {
         flex: 1 1 25%;
     }
@@ -96,19 +97,49 @@ footer {
 
 /* Mobile Phone */
 @media all and (max-width:500px) {
-    .flex-nav ul{
-        display: none;
-    }
-    .flex-nav.open  ul {
-        display: flex;
+    .flex-nav ul li {
+        flex-basis: 100%;
     }
 
     .toggleNav {
         display: block;
     }
-    
-    
-    .flex-nav ul li {
-        flex-basis: 100%;
+
+    /* Flex Container */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
     }
+
+    /* Flex Item :- Every imedate child of 'wrapper' */
+    .wrapper>* {
+        order: 99;
+    }
+
+    .flex-nav {
+        order: 1;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
+    .flex-nav ul.open {
+        display: flex;
+    }
+
+
+    /* Re-order the other elements */
+
+    .top {
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+    .signup {
+        order: 4;
+    }
+
+
+
 }
