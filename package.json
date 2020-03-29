@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/shaonkabir8/learn-flex#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
