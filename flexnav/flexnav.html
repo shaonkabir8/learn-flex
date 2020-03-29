@@ -64,13 +64,12 @@
 
     </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- Toggle Navigation on Mobile device -->
     <script>
-        $(function () {
-            $('.toggleNav').on('click', function () {
-                $('.flex-nav ul').toggleClass('open');
-            });
-        });
+        // grab the element and add click handler for toggle className on 'flex-nav'
+        document.querySelector('.toggleNav').addEventListener('click', function() {
+            document.querySelector('.flex-nav').classList.toggle('open');
+        })
     </script>
 
 </body>

@@ -96,6 +96,18 @@ footer {
 
 /* Mobile Phone */
 @media all and (max-width:500px) {
+    .flex-nav ul{
+        display: none;
+    }
+    .flex-nav.open  ul {
+        display: flex;
+    }
+
+    .toggleNav {
+        display: block;
+    }
+    
+    
     .flex-nav ul li {
         flex-basis: 100%;
     }

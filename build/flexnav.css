@@ -110,6 +110,20 @@ footer {
 
 /* Mobile Phone */
 @media all and (max-width:500px) {
+    .flex-nav ul{
+        display: none;
+    }
+    .flex-nav.open  ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .toggleNav {
+        display: block;
+    }
+    
+    
     .flex-nav ul li {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
